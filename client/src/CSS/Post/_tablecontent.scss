@@ -1,0 +1,33 @@
+.content-table{
+    width: 952px;
+    margin: 40px auto;
+
+    h2{
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    ul{
+        li{
+            font-size: 18px;
+            font-weight: 400;
+            margin: 8px 0;
+        }
+    }
+
+    .rating-box{
+        text-align: center;
+        margin: 20px 0;
+        
+        p, p span{
+            font-size: 20px;
+        }
+    }
+
+    p{
+        width: 100%;
+        font-size: 18px;
+        font-weight: 400;
+        margin: 40px 0;
+    }
+}

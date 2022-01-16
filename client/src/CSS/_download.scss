@@ -1,0 +1,33 @@
+.thanks-container{
+    width: 952px;
+    margin: 80px auto;
+
+    p{
+        margin: 30px 0;
+    }
+
+    .app-name{
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    button{
+        background-color: #14255c;
+        width: 450px;
+        padding: 12px 20px;
+        display: block;
+        margin: 20px auto;
+        border-radius: 5px;
+        color: white;
+        // a{
+        //     color: white;
+        // }
+    }
+
+    p.red{
+        text-align: center;
+        font-weight: 600;
+    }
+}

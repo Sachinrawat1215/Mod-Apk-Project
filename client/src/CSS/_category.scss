@@ -1,0 +1,36 @@
+.category-container {
+    width: 1352px;
+    margin: 60px auto;
+
+    .categories {
+        margin-top: 20px;
+        display: flex;
+
+        .single {
+            padding: 8px 50px 8px 15px;
+            background-color: rgb(158, 8, 8);
+            margin: 5px 20px 5px 0;
+            border-radius: 5px;
+
+            a {
+                display: flex;
+                align-items: center;
+                background-color: transparent;
+
+                img {
+                    padding: 8px;
+                    background-color: white;
+                    border-radius: 30px;
+                    width: 50px;
+                }
+
+                p {
+                    display: inline-block;
+                    background-color: transparent;
+                    color: white;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}

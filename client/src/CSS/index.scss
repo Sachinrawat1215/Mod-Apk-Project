@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+// Declaring all variables
+$headfont: "Poppins", sans-serif;
+$localfont: "DM Sans", sans-serif;
+$blue: #2C79FF;
+
+// Import all CSS files
+@import './header';
+@import './category';
+@import './viewed';
+@import './footer';
+@import './join';
+@import './profit';
+@import './download';
+@import './Post/postheader';
+@import './Post/tablecontent';
+@import './Post/relatedapp';
+@import './Post/summary';
+@import './create';
+
+// Global CSS
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $localfont;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+body{
+    background-color: #F1F6FF;
+    
+}
+
+.red{
+    color: red;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+button{
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    outline: none;
+}
+
+input[type="submit"]{
+    cursor: pointer;
+}
+
+h1{
+    font-size: 28px;
+    font-weight: 700;
+    font-family: $headfont;
+}
+
+h1::after{
+    display: block;
+    width: 60px;
+    height: 5px;
+    border-radius: 4px;
+    content: '';
+    background-color: $blue;
+}
+
+h2{
+    font-size: 28px;
+    font-weight: 700;
+    font-family: $headfont;
+}

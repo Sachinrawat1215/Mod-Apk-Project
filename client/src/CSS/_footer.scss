@@ -1,0 +1,41 @@
+footer{
+    width: 100%;
+    background-color: black;
+    color: white;
+
+    .content{
+        width: 1352px;
+        margin: 0 auto;
+        // border: 2px solid red;
+        padding-top: 30px;
+
+h3{
+font-size: 25px;
+margin-bottom: 20px;
+i{
+    margin-right: 8px;
+}
+}
+
+        ul{
+            margin-bottom: 30px;
+            li{
+                list-style-type: none;
+                display: inline-block;
+
+                a{
+                    color: white;
+                    padding: 7px 10px;
+                    // border: 1px solid white;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+
+    p{
+        text-align: center;
+        line-height: 40px;
+        font-size: 18px;
+    }
+}

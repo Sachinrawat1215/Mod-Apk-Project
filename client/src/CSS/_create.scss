@@ -1,0 +1,44 @@
+.create-container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+
+    form{
+        width: 900px;
+        background-color: white;
+        padding: 30px 40px;
+        margin: 60px 0;
+        height: 100%;
+        border: 1px solid black;
+
+        label{
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        input, textarea{
+            display: block;
+            padding: 7px 18px;
+            margin: 3px 0 15px 0;
+            width: 100%;
+            border-radius: 2px;
+            border: 1px solid black;
+        }
+
+        textarea{
+            resize: none;
+            height: 150px;
+        }
+
+        input[type="submit"]{
+            background-color: rgb(59, 56, 56);
+            color: white;
+        }
+
+        input[type="submit"]:hover{
+            background-color: black;
+            color: white;
+        }
+    }
+}

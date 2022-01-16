@@ -1,0 +1,84 @@
+.mostviewed {
+    width: 1352px;
+    margin: 60px auto;
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 0px;
+        justify-items: center;
+        margin-top: 20px;
+
+        .single {
+            display: flex;
+            align-items: center;
+            width: 640px;
+            padding: 7px 25px 5px 25px;
+            border-radius: 10px;
+            background-color: white;
+            margin: 9px 0;
+            cursor: pointer;
+
+            .left {
+                width: 70px;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .right {
+                margin-left: 10px;
+
+                .name {
+                    font-size: 21px;
+                    font-weight: 600;
+                    font-family: $headfont;
+                    margin-bottom: 5px;
+                }
+
+                .down {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 500px;
+                    // border: 2px solid red;
+
+                    .version {
+                        // border: 2px solid green;
+                        display: flex;
+
+                        img {
+                            width: 20px;
+                            height: 20px;
+                        }
+
+                        p {
+                            margin-left: 4px;
+                            font-size: 17px;
+                        }
+                    }
+
+                    .category {
+                        p {
+                            border-radius: 5px;
+                            padding: 2px 8px;
+                            color: white;
+                            background-color: black;
+                            font-size: 15px;
+                            width: 120px;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+
+        .single:hover{
+            margin: 5px;
+            box-shadow: 0px 0px 10px 2px rgba(122, 174, 255, 0.46);
+            -webkit-box-shadow: 0px 0px 10px 2px rgba(122, 174, 255, 0.46);
+            -moz-box-shadow: 0px 0px 10px 2px rgba(122, 174, 255, 0.46);
+            transition: 0.2s ease;
+        }
+    }
+}
