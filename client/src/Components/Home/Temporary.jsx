@@ -2,13 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Temporary = (props) => {
-    console.log(props.element);
+    // console.log(props.element);
     let title = props.element.title;
     let finalTitle = title.slice(0, 40);
-    // console.log(finalTitle);
 
     return (
-        <Link to="/post">
+        <Link to={props.element._id}>
             <div className="single">
                 <div className="left">
                     <img src={props.element.image} alt="" />

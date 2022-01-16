@@ -15,7 +15,7 @@ const App = () => {
                 <Route path="/download">
                     <Download />
                 </Route>
-                <Route path="/post">
+                <Route path="/:id">
                     <Post />
                 </Route>
                 <Route path="/">

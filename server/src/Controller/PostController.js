@@ -20,7 +20,19 @@ const getAllPost = async (request, response) => {
     }
 }
 
+const getPost = async (request, response) => {
+    console.log(request.params.id);
+    try {
+        let post = await Collection.findById( request.params.id );
+        console.log(post);
+        response.status(200).json(post);
+    } catch (error) {
+        response.status(500).json(error);
+    }
+}
+
 module.exports = {
     setpost: saveApk,
-    getall: getAllPost
+    getall: getAllPost,
+    getpost: getPost,
 };

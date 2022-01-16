@@ -1,7 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import JsxParser from 'react-jsx-parser';
 
-const Summary = () => {
+const Summary = (props) => {
+
     return (
         <div className='summary-container'>
             <h1>Final Words</h1>
@@ -14,7 +16,7 @@ const Summary = () => {
 
             <div className="content">
                 <div className="left">
-                    <p>Netflix, Inc. is an American media services provider and production company headquartered in Los Gatos, California, founded in 1997 by Reed Hastings and Marc Randolph in Scotts Valley, California. So Download Netflix MOD APK  to enjoy these Benefits. </p>
+                    <JsxParser jsx={props.content} />
                 </div>
 
                 <div className="right">

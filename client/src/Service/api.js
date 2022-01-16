@@ -19,4 +19,13 @@ const getAllPost = async () => {
     }
 }
 
-export { submitDetail, getAllPost };
+const getPost = async (id) => {
+    try {
+        const response = await axios.get(`${URL}/${id}`);
+        return response.data;
+    } catch (error) {
+        console.log(`Failed to run getPost method and error is ${error}`);
+    }
+}
+
+export { submitDetail, getAllPost, getPost };
