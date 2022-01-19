@@ -11,7 +11,7 @@ const Create = () => {
     const [size, setsize] = useState('');
     const [updatedate, setupdatedate] = useState('');
     const [tablecontent, settablecontent] = useState('');
-    const [content, setcontent] = useState('&#x3C;p&#x3E;&#x3C;/p&#x3E; &#x3C;p&#x3E;&#x3C;/p&#x3E; &#x3C;p&#x3E;&#x3C;/p&#x3E; &#x3C;p&#x3E;&#x3C;/p&#x3E;');
+    const [content, setcontent] = useState('');
     // const [related1, setrelated1] = useState('&#x3C;RelatedApp name=&#x22;Netflix Apk&#x22; image=&#x22;Images/netflix.png&#x22; red=&#x22;210&#x22; green=&#x22;0&#x22; blue=&#x22;20&#x22; alpha=&#x22;1&#x22; url=&#x22;/&#x22; /&#x3E;');
     // const [related2, setrelated2] = useState('&#x3C;RelatedApp name=&#x22;Netflix Apk&#x22; image=&#x22;Images/netflix.png&#x22; red=&#x22;210&#x22; green=&#x22;0&#x22; blue=&#x22;20&#x22; alpha=&#x22;1&#x22; url=&#x22;/&#x22; /&#x3E;');
     // const [related3, setrelated3] = useState('&#x3C;RelatedApp name=&#x22;Netflix Apk&#x22; image=&#x22;Images/netflix.png&#x22; red=&#x22;210&#x22; green=&#x22;0&#x22; blue=&#x22;20&#x22; alpha=&#x22;1&#x22; url=&#x22;/&#x22; /&#x3E;');
@@ -41,7 +41,7 @@ const Create = () => {
         await submitDetail(dataObj);
     }
 
-    console.log(dataObj);
+    // console.log(category);
 
     return (
         <div className="create-container">
@@ -53,12 +53,19 @@ const Create = () => {
                 <label htmlFor="version">Version</label>
                 <input type="text" onChange={(e) => { setversion(e.target.value) }} value={version} name="version" id='version' />
                 <label htmlFor="category">Category</label>
-                <input type="text" onChange={(e) => { setcategory(e.target.value) }} id='category' value={category} name="category" />
+                {/* <input type="text" onChange={(e) => { setcategory(e.target.value) }} id='category' value={category} name="category" /> */}
+                <select name="category" id="category" onChange={(e) => setcategory(e.target.value)}>
+                    <option value="Select">Select</option>
+                    <option value="Education">Education</option>
+                    <option value="Entertainment">Entertainment</option>
+                    <option value="Tools">Tools</option>
+                    <option value="Editing">Editing</option>
+                    <option value="Games">Games</option>
+                </select>
                 <label htmlFor="name">Name</label>
                 <input type="text" onChange={(e) => { setname(e.target.value) }} value={name} name='name' id='name' />
                 <label htmlFor="publisher">Publisher</label>
-                <input type="text" onChange={(e) => { setpublisher(e.target.value) }} value={publisher} name='publisher' id=
-                'publisher' />
+                <input type="text" onChange={(e) => { setpublisher(e.target.value) }} value={publisher} name='publisher' id='publisher' />
                 <label htmlFor="size">Size</label>
                 <input type="text" onChange={(e) => { setsize(e.target.value) }} value={size} name='size' id='size' />
                 <label htmlFor="updateddate">Updated Date</label>

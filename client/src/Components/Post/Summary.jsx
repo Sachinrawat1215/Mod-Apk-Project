@@ -1,8 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import JsxParser from 'react-jsx-parser';
 
 const Summary = (props) => {
+    const {id} = useParams();
 
     return (
         <div className='summary-container'>
@@ -28,7 +29,7 @@ const Summary = (props) => {
                 </div>
             </div>
             <button style={{boxShadow: "0px 0px 5px 4px rgba(20, 37, 92, 0.3)"}}>
-                <Link to="/download">Download &nbsp;<i className="fas fa-download"></i>&nbsp;&nbsp; ( 15 MB )</Link>
+                <a href={`/download/${{id}.id}`}>Download &nbsp;<i className="fas fa-download"></i>&nbsp;&nbsp; ( 15 MB )</a>
             </button>
         </div>
     )

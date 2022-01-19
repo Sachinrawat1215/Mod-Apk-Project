@@ -3,21 +3,21 @@
 // Declaring all variables
 $headfont: "Poppins", sans-serif;
 $localfont: "DM Sans", sans-serif;
-$blue: #2C79FF;
+$blue: #2c79ff;
 
 // Import all CSS files
-@import './header';
-@import './category';
-@import './viewed';
-@import './footer';
-@import './join';
-@import './profit';
-@import './download';
-@import './Post/postheader';
-@import './Post/tablecontent';
-@import './Post/relatedapp';
-@import './Post/summary';
-@import './create';
+@import "./header";
+@import "./category";
+@import "./viewed";
+@import "./footer";
+@import "./join";
+@import "./profit";
+@import "./download";
+@import "./Post/postheader";
+@import "./Post/tablecontent";
+@import "./Post/relatedapp";
+@import "./Post/summary";
+@import "./create";
 
 // Global CSS
 * {
@@ -29,49 +29,71 @@ $blue: #2C79FF;
     font-size: 18px;
 }
 
-body{
-    background-color: #F1F6FF;
-    
+body {
+    background-color: #f1f6ff;
 }
 
-.red{
+.red {
     color: red;
 }
 
-a{
+a {
     text-decoration: none;
     color: black;
     display: block;
 }
 
-button{
+button {
     cursor: pointer;
     text-align: center;
     border: none;
     outline: none;
 }
 
-input[type="submit"]{
+input[type="submit"] {
     cursor: pointer;
 }
 
-h1{
+h1 {
     font-size: 28px;
     font-weight: 700;
     font-family: $headfont;
 }
 
-h1::after{
+h1::after {
     display: block;
     width: 60px;
     height: 5px;
     border-radius: 4px;
-    content: '';
+    content: "";
     background-color: $blue;
 }
 
-h2{
+h2 {
     font-size: 28px;
     font-weight: 700;
     font-family: $headfont;
+}
+
+@media (max-width: 1600px) {
+    *{
+        font-size: 16px;
+    }
+    h1 {
+        font-size: 26px;
+    }
+
+    h1::after {
+        height: 4px;
+        width: 55px;
+    }
+
+    h2 {
+        font-size: 23px;
+        font-weight: 600;
+    }
+
+    p {
+        font-size: 16px;
+    }
 }

@@ -29,3 +29,20 @@
         // -moz-box-shadow: 0px 0px 5px 4px rgba(210, 0, 20, 0.4);
     }
 }
+
+@media(max-width: 1600px){
+    .related-app{
+        width: 580px;
+        img{
+            width: 110px;
+        }
+        button {
+            color: white;
+            margin: 14px;
+            padding: 12px 20px;
+            border: 0;
+            outline: 0;
+            border-radius: 4px;
+        }
+    }
+}

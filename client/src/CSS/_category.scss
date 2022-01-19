@@ -1,6 +1,7 @@
 .category-container {
     width: 1352px;
     margin: 60px auto;
+    // border: 1px solid red;
 
     .categories {
         margin-top: 20px;
@@ -30,6 +31,20 @@
                     color: white;
                     margin-left: 10px;
                 }
+            }
+        }
+    }
+}
+
+@media (max-width: 1600px) {
+    .category-container {
+        width: 1150px;
+
+        .categories .single {
+            padding: 8px 30px 8px 15px;
+
+            a img {
+                width: 40px;
             }
         }
     }

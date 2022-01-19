@@ -10,7 +10,7 @@ const Join = () => {
                 <h2>We'd love to see you here</h2>
             </div>
             <div className="right">
-                <a href="/"><img src="./Images/telegram.png" alt="" /></a>
+                <a href="https://t.me/freemodhub"><img src="./Images/telegram.png" alt="" /></a>
             </div>
         </div>
     )

@@ -4,15 +4,19 @@ import Post from './Pages/Post';
 import { Switch, Route } from 'react-router-dom';
 import Download from './Pages/Download';
 import Create from './Pages/Create';
+import Filter from './Pages/Filter';
 
 const App = () => {
     return (
         <React.Fragment>
             <Switch>
-            <Route path="/create">
+                <Route path="/filter">
+                    <Filter />
+                </Route>
+                <Route path="/create">
                     <Create />
                 </Route>
-                <Route path="/download">
+                <Route path="/download/:id">
                     <Download />
                 </Route>
                 <Route path="/:id">

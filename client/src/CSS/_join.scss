@@ -72,3 +72,32 @@
         }
     }
 }
+
+@media(max-width: 1600px){
+    .join-container{
+        width: 800px;
+
+        .left img {
+            margin: 0 20px;
+            width: 50%;
+        }
+        .right img {
+            width: 65px;
+        }
+        .center h2 {
+            font-size: 35px;
+            font-weight: 600;
+            margin-bottom: 0;
+        }
+    }
+
+    .small-join-container .main-content {
+        border: 2px solid #4da7fb;
+        padding: 8px 21px;
+        margin: 0 12px;
+
+        p i {
+            font-size: 19px;
+        }
+    }
+}

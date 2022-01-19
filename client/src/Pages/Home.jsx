@@ -18,8 +18,8 @@ const Home = () => {
         fetchData();
     }, [])
 
-    // console.log(data.slice(0, 4))
     const topData = data.slice(0, 4);
+    console.log(data);
 
     return (
         <div className='container'>
@@ -30,7 +30,7 @@ const Home = () => {
             <MostViewed head="Latest Update" />
             <Join />
             <MostViewed head="Newly Added" />
-            <SmallJoin />
+            {/* <SmallJoin /> */}
             <Footer />
         </div>
     )

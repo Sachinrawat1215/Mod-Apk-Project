@@ -1,6 +1,6 @@
 .postheader {
     width: 1352px;
-    margin: 0 auto;
+    margin: 40px auto 0 auto;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -65,5 +65,15 @@
     button:hover{
         background-color: black;
         transition: 0.6s ease;
+    }
+}
+
+@media(max-width: 1600px){
+    .postheader{
+        width: 1150px;
+
+        .detail-box .left img {
+            width: 180px;
+        }
     }
 }

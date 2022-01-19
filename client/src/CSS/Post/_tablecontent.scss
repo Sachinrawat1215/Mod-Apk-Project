@@ -1,33 +1,54 @@
-.content-table{
+.content-table {
     width: 952px;
     margin: 40px auto;
 
-    h2{
+    h2 {
         font-size: 30px;
         margin-bottom: 20px;
     }
 
-    ul{
-        li{
+    ul {
+        li {
             font-size: 18px;
             font-weight: 400;
             margin: 8px 0;
         }
     }
 
-    .rating-box{
+    .rating-box {
         text-align: center;
         margin: 20px 0;
-        
-        p, p span{
+
+        p,
+        p span {
             font-size: 20px;
         }
     }
 
-    p{
+    p {
         width: 100%;
         font-size: 18px;
         font-weight: 400;
         margin: 40px 0;
+    }
+}
+
+@media (max-width: 1600px) {
+    .content-table {
+        h2{
+            font-size: 26px;
+        }
+        p {
+            font-size: 17px;
+        }
+
+        ul li {
+            font-size: 17px;
+            margin: 6px 0;
+        }
+
+        .rating-box p{
+            font-size: 17px;
+        }
     }
 }

@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const CategorySlice = (props) => {
     let Getcolor = `rgba(${props.r}, ${props.g}, ${props.b}, 1)`;
@@ -6,7 +6,7 @@ const CategorySlice = (props) => {
 
     return (
         <div className="single" style={{ backgroundColor: Getcolor, boxShadow: Shadowcolor }}>
-            <a href="/">
+            <a href={`/filter/?category=${props.name}`}>
                 <img src={props.imgUrl} alt="" />
                 <p>{props.name}</p>
             </a>

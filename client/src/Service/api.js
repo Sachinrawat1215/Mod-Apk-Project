@@ -28,4 +28,13 @@ const getPost = async (id) => {
     }
 }
 
-export { submitDetail, getAllPost, getPost };
+const getDownloadLink = async (id) => {
+    try {
+        const response = await axios.get(`${URL}/download/${id}`);
+        return response.data;
+    } catch (error) {
+        console.log(`Failed to run getDownloadLink and error is ${error}`);
+    }
+}
+
+export { submitDetail, getAllPost, getPost, getDownloadLink };
